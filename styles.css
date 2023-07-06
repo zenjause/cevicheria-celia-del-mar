@@ -1,0 +1,498 @@
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    margin: 0;
+    color: #fff;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;           
+}
+.fondo-inicio{
+    width: 100%;
+}
+.portada{
+    width: 100%;
+    
+    
+}
+.img-portada{
+    width: 100%;
+    position: fixed;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+.over-title{
+    margin: 10rem;
+    padding: 5rem;
+    font-size: 3rem;
+}
+
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button5-1 {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    padding-right: 40px;
+    border-radius: 4px;
+    font-weight: 600;
+    position: relative;
+    border: none;
+    font-size: 1.3rem;
+    padding: 1rem 4rem 1rem 3rem;
+    margin-top: 5rem;
+    
+    
+    
+}
+.button5-1 {
+    background-color: white;
+    opacity:0.7;
+}
+.button5-1::after {
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,<svg width='559' height='395' viewBox='0 0 559 395' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M376.212 7.14557C372.634 2.85647 367.419 0.270575 361.841 0.0205746C356.263 -0.233335 350.833 1.87217 346.884 5.82137C342.939 9.77057 340.829 15.1964 341.083 20.7744C341.337 26.3564 343.923 31.5714 348.212 35.1454L491.072 178.165H18.882C12.0187 178.533 5.827 182.404 2.499 188.415C-0.833 194.423 -0.833 201.724 2.499 207.735C5.8271 213.747 12.0185 217.618 18.882 217.981H491.072L347.992 360.841C344.39 364.615 342.383 369.627 342.383 374.841C342.383 380.056 344.39 385.071 347.992 388.841C351.703 392.564 356.738 394.654 361.992 394.654C367.246 394.654 372.285 392.564 375.992 388.841L552.952 211.881V211.885C556.757 208.221 558.909 203.166 558.909 197.885C558.909 192.6 556.757 187.545 552.952 183.885L376.212 7.14557Z' fill='black'/></svg>");
+    width: 13px;
+    height: 9px;
+    background-size: 0.8rem;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: 0.3s all ease-in-out;
+}
+.button5-1:hover::after {
+    right: 10px;
+}
+/*iniciando el header de main*/
+
+.fondo-main{
+    background: black;
+}
+img{
+    width: 80%;
+}
+header{
+    width: 80%;
+    height: 65px;
+    background: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 5%;
+}
+.logo{
+    width: 120px;
+    margin-top: 8px;
+}
+.logo img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.presentacion-combo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.presentacion-combo img{
+    width: 28%;
+}
+nav .logo{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li a {
+    color:#212526 ;
+    display: block;
+    margin: 0 2px;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 30px;
+    text-decoration: none;
+    list-style: none;
+}
+nav ul li a:hover{
+    background: #f6f4ff;
+}
+nav ul li a.active{
+    background:#3FB7EC ;
+    color: #fff;
+}
+.hamburger{
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.hamburger:hover{
+    background: #fef4ff;
+}
+.hamburger div{
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+    background: #212526;
+}
+@media only screen and (max-width: 1000px) {
+    header{
+        width: 90%;
+        padding: 0 20px;
+    }
+    nav{
+        position: absolute;
+        left: -300px;
+        top: 0;
+        z-index: 999;
+        width: 200px;
+        height:100vh ;
+        background-color: #fefefe;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, .05);
+    }
+    #nav_check:checked ~ nav{
+        left: -21px;
+    }
+    nav .logo{
+        display: block;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+    nav ul li a {
+        margin-bottom: 5px;
+        padding: 10px 15px;
+        border-radius: 5px;
+
+    }
+    nav ul{
+        display: block;
+        padding: 0 20px;
+        margin-top: 30px;
+
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .map-contain video{
+        width: 270px;
+    }
+
+}
+
+
+
+
+
+/*iniciando el main*/
+
+.conteudo{
+    margin-top: 2rem;
+    margin-left: 3.5rem;
+    padding-top: 3rem;
+}
+.carrosel {
+    font-family: "Verdana", sans-serif;
+    -webkit-perspective: 250px;
+    -moz-perspective: 250px;
+    width: 400px;
+    height: 200px;
+    top: 50px;
+    position: relative;
+    margin: 0 auto;
+}
+
+@-webkit-keyframes efeitoCarrosel {
+    from {
+        -webkit-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+        -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+        z-index: 10;
+        opacity: 1
+    }
+
+    50% {
+        z-index: -10;
+    }
+
+    to {
+        -webkit-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+        -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+        z-index: 10;
+        opacity: 1
+    }
+}
+
+@-moz-keyframes efeitoCarrosel {
+    from {
+        -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+        z-index: 10;
+        opacity: 1
+    }
+
+    50% {
+        z-index: -10;
+    }
+
+    to {
+        -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+        z-index: 10;
+        opacity: 1
+    }
+}
+
+.caixa__card {
+    width: 90px;
+    height: 100px;
+    background:transparent ;
+    position: absolute;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    top: 35px;
+    left: 125px;
+    font-size: 9px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    text-align: center;
+    -webkit-animation-name: efeitoCarrosel;
+    -moz-animation-name: efeitoCarrosel;
+    -webkit-animation-duration: 8s;
+    -moz-animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+.caixa__card:hover {
+    border: solid #4466cc 3px;
+    box-shadow: 0px 0px 10px #4466cc;
+}
+
+.caixa__card.cc__1 {
+    background-image: url(./assets/duos/duos.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    -webkit-animation-delay: -7s;
+    -moz-animation-delay: -7s;
+}
+
+.caixa__card.cc__2 {
+    background-image: url(./assets/trios/1234.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    -webkit-animation-delay: -6s;
+    -moz-animation-delay: -6s;
+}
+
+.caixa__card.cc__3 {
+    background-image: url(./assets/rondas/IMG_2098.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    -webkit-animation-delay: -5s;
+    -moz-animation-delay: -5s;
+}
+
+.caixa__card.cc__4 {
+    background-image: url(././assets/platos-frios/IMG_1869.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    -webkit-animation-delay: -4s;
+    -moz-animation-delay: -4s;
+}
+
+.caixa__card.cc__5 {
+    background-image: url(./assets/calientes/parihuela.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    -webkit-animation-delay: -3s;
+    -moz-animation-delay: -3s;
+}
+
+.caixa__card.cc__6 {
+    background-image: url(./assets/arroces/IMG_1992.png);
+    background-position: bottom;
+    background-size:cover;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    -webkit-animation-delay: -2s;
+    -moz-animation-delay: -2s;
+}
+
+.caixa__card.cc__7 {
+    background-image: url(./assets/frituras/jalea.png) ;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    -webkit-animation-delay: -1s;
+    -moz-animation-delay: -1s;
+}
+
+.caixa__card.cc__8 {
+    background-image:  url(./assets/bebidas/IMG_2064.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+.sub-title{
+    margin-top: 2rem;
+}
+.title-secundary{
+    margin-top:80px ;
+    text-align: center;
+    color: #68b6d6;
+}
+/* Lista de menu main*/
+
+.menu{
+    display: flex;
+    width: 100%;
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2rem;
+}
+.menu-list li{
+    width: 100%;
+    
+}
+.menu-list li h4{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.menu .menu-list img{
+    width: 100%;
+}
+
+/*multimedia*/
+
+.contain-media{
+    margin-top:10px;
+    padding-top: 20px;
+}
+
+/*zona de combos*/
+
+.presentacion-combo{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+/*cards de productos*/
+
+* {
+    font-family: "Roboto";
+}
+
+html,
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+.productos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    
+    flex-wrap: wrap;
+}
+.productos .menu-list li img{
+    width: 100%;
+    
+}
+/*slider container*/
+
+/*boton de wap*/
+
+.whatsapp {
+    position:fixed;
+    width:55px;
+    height:55px;
+    bottom:30px;
+    right:30px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+    box-shadow:0px 1px 10px rgb(0 0 0 / 30%);
+}
+.whatsapp:hover{
+    color: #25d366;
+    background: #FFF;
+}
+.whatsapp-icon {
+    margin-top:13px;
+}
+
+
+@media only screen and (max-width: 426px){
+    .over-title{
+        margin: 1rem;
+        padding: 4rem;
+    }
+}
+@media only screen and (max-width: 321px){
+    .over-title{
+        padding: 2rem;
+    }
+}
