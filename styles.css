@@ -405,6 +405,7 @@ nav ul li a.active{
     flex-wrap: wrap;
     flex-direction: column;
     padding: 2rem;
+    gap: 5rem;
 }
 .menu-list li{
     width: 100%;
@@ -459,6 +460,24 @@ body {
     
 }
 /*slider container*/
+
+/*flip-card*/
+.flip-card-front img{
+    max-width: 260px;
+    max-height: 220px;
+    height: auto;
+    width: auto;
+    margin-top: 2rem;
+}
+
+.flip-card-back img{
+    width: auto;
+    height: auto;
+    max-width: 140px;
+    max-height: 140px;
+    margin-top: 2rem;
+}
+
 
 /*boton de wap*/
 
