@@ -421,8 +421,11 @@ nav ul li a.active{
     justify-content: space-between;
     align-items: flex-end;
 }
+.button5-1{
+    font-size: 1rem;
+}
 .menu-list li h4{
-    font-size: 2rem;
+
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
