@@ -417,12 +417,13 @@ nav ul li a.active{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: space-between;
-    align-items: flex-end;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 .button5-1{
     font-size: 1rem;
+    margin-top: 1rem;
 }
 .menu-list li h4{
 
